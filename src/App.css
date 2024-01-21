@@ -1,0 +1,58 @@
+.box-parent {
+  background-color: #0f0e0e;
+  width: 100vw;
+  height: 100vh;
+} 
+
+/*.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(47, 79, 79, 0.356);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  z-index: 3;
+}
+
+.box1 {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(13, 236, 236);
+  border-radius: 50%;
+  position: absolute;
+  animation-name: box1;
+  animation-direction: linear;
+  transform: translateX(200px);
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box1 {
+  0% {
+    transform: translateX(-200px);
+    z-index: 1;
+  }
+ 
+  50% {
+    transform: translateX(200px);
+   
+  }
+ 
+  100% {
+    transform: translateX(-200px);
+    z-index: 6;
+  }
+} */
+.box {
+
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 255, 255, 0.705);
+  border-radius: 10%;
+  box-shadow: 
+     5px 5px 20px rgba(206, 209, 5, 0.2), /* Top-left */
+     -5px 5px 20px rgba(247, 3, 3, 0.2), /* Top-right */
+     5px -5px 20px rgba(245, 5, 5, 0.2), /* Bottom-left */
+     -5px -5px 20px rgba(108, 233, 7, 0.2); /* Bottom-right */ 
+ 
+}
