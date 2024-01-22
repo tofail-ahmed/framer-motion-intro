@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../App.css";
 import { motion } from "framer-motion";
 const parent = {
@@ -26,21 +26,30 @@ const parent = {
 };
 const Lesson3 = () => {
 const [hover,setHover]=useState(false)
-
+const parentRef=useRef(null)
   return (
     <div className="flex justify-center items-center h-screen box-parent">
-      <motion.div
+     <div ref={parentRef} className="border border-red-500 size-[500px]">
+     <motion.div
         variants={parent}
         initial="initial"
         animate="animate"
         whileHover="hover"
         whileTap="tap"
         drag
-        dragConstraints={{ left: -300, right: 300, top: -300, bottom: 300 }}
+      //   dragSnapToOrigin
+        dragElastic={1}
+      //   dragConstraints={{ left: -300, right: 300, top: -300, bottom: 300 }}
+      dragConstraints={parentRef}
         onHoverStart={()=>setHover(true)}
         onHoverEnd={()=>setHover(false)}
-        className={`box border ${hover?"bg-yellow-400":" "}`}
+        whileDrag={{
+            scale:1.2,
+            boxShadow:"0px 10px 10px #ffffff"
+        }}
+        className={`box border ${hover?"bg-yellow-400":" "} ` }
       ></motion.div>
+     </div>
     </div>
   );
 };
