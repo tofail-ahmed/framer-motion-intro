@@ -44,7 +44,7 @@ const parentRef=useRef(null)
         onHoverStart={()=>setHover(true)}
         onHoverEnd={()=>setHover(false)}
         whileDrag={{
-            scale:1.2,
+            scale:1.1,
             boxShadow:"0px 10px 10px #ffffff"
         }}
         className={`box border ${hover?"bg-yellow-400":" "} ` }
