@@ -1,6 +1,7 @@
 import "./App.css";
 import { motion } from "framer-motion";
 import Lesson3 from "./components/lesson3";
+import Lesson5 from "./components/Lesson5";
 
 function App() {
  
@@ -30,7 +31,7 @@ function App() {
     //   </motion.div>
     // </div>
     <div>
-      <Lesson3></Lesson3>
+      <Lesson5></Lesson5>
     </div>
   );
 }
