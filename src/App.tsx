@@ -1,5 +1,6 @@
 import "./App.css";
 import { motion } from "framer-motion";
+import Lesson3 from "./components/lesson3";
 
 function App() {
  
@@ -13,20 +14,23 @@ function App() {
      animate:{ opacity: 1,scale:1 }
   }
   return (
-    <div className="flex justify-center items-center h-screen box-parent">
-      <motion.div
-      variants={parent}
-        initial="initial"
-        animate="animate"
-        transition= {{ duration: 2, type:"spring",repeatType:"reverse",delayChildren:0.5,staggerChildren:0.5}}
+    // <div className="flex justify-center items-center h-screen box-parent">
+    //   <motion.div
+    //   variants={parent}
+    //     initial="initial"
+    //     animate="animate"
+    //     transition= {{ duration: 2, type:"spring",repeatType:"reverse",delayChildren:0.5,staggerChildren:0.5}}
 
-        className=" box flex flex-wrap gap-4 justify-center items-center"
-      >
-        <motion.div variants={child} className="size-20 bg-amber-500 rounded-sm"></motion.div>
-        <motion.div variants={child} className="size-20 bg-amber-500 rounded-sm"></motion.div>
-        <motion.div variants={child} className="size-20 bg-amber-500 rounded-sm"></motion.div>
-        <motion.div variants={child} className="size-20 bg-amber-500 rounded-sm"></motion.div>
-      </motion.div>
+    //     className=" box flex flex-wrap gap-4 justify-center items-center"
+    //   >
+    //     <motion.div variants={child} className="size-20 bg-orange-500 rounded-sm"></motion.div>
+    //     <motion.div variants={child} className="size-20 bg-orange-500 rounded-sm"></motion.div>
+    //     <motion.div variants={child} className="size-20 bg-orange-500 rounded-sm"></motion.div>
+    //     <motion.div variants={child} className="size-20 bg-orange-500 rounded-sm"></motion.div>
+    //   </motion.div>
+    // </div>
+    <div>
+      <Lesson3></Lesson3>
     </div>
   );
 }
