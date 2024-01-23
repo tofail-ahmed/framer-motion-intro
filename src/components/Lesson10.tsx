@@ -11,7 +11,7 @@ const Lesson10 = () => {
         <motion.div className={`box  size-32 `}
         drag
         dragConstraints={{ left: -300, right: 300, top: -300, bottom: 300 }}
-      //   dragSnapToOrigin
+        dragSnapToOrigin
         dragElastic={1}
         dragControls={controls}
         >

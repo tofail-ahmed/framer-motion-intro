@@ -7,6 +7,7 @@ import Lesson7 from "./components/Lesson7";
 import Lesson8 from "./components/Lesson8";
 import Lesson9 from "./components/Lesson9";
 import Lesson10 from "./components/Lesson10";
+import Lesson11 from "./components/Lesson11";
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
     // </div>
     <div className="w-full flex flex-col justify-center items-center">
       {/* <div className="h-[200vh] w-full bg-rose-600"></div> */}
-        <Lesson10></Lesson10>
+        <Lesson11></Lesson11>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, sint.</p>
     </div>
   );
