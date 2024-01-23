@@ -5,6 +5,7 @@ import Lesson5 from "./components/Lesson5";
 import Lesson6 from "./components/Lesson6";
 import Lesson7 from "./components/Lesson7";
 import Lesson8 from "./components/Lesson8";
+import Lesson9 from "./components/Lesson9";
 
 
 function App() {
@@ -35,8 +36,8 @@ function App() {
     //   </motion.div>
     // </div>
     <div className="w-full flex flex-col justify-center items-center">
-      <div className="h-[200vh] w-full bg-rose-600"></div>
-        <Lesson8></Lesson8>
+      {/* <div className="h-[200vh] w-full bg-rose-600"></div> */}
+        <Lesson9></Lesson9>
       
     </div>
   );
