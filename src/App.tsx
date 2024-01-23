@@ -40,7 +40,6 @@ function App() {
       {/* <div className="h-[200vh] w-full bg-rose-600"></div> */}
         <Lesson10></Lesson10>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, sint.</p>
-      
     </div>
   );
 }
