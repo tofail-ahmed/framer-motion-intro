@@ -10,7 +10,7 @@ const Lesson10 = () => {
       <div className="border flex justify-center   items-center  border-red-500 size-96">
         <motion.div className={`box  size-32 `}
         drag
-        dragConstraints={{ left: -300, right: 300, top: -300, bottom: 300 }}
+        dragConstraints={{ left: -300, right: 300, top: -300, bottom: 299 }}
       //   dragSnapToOrigin
         dragElastic={1}
         dragControls={controls}
