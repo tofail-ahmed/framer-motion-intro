@@ -2,6 +2,10 @@ import "./App.css";
 import { motion } from "framer-motion";
 import Lesson3 from "./components/lesson3";
 import Lesson5 from "./components/Lesson5";
+import Lesson6 from "./components/Lesson6";
+import Lesson7 from "./components/Lesson7";
+import Lesson8 from "./components/Lesson8";
+
 
 function App() {
  
@@ -30,8 +34,10 @@ function App() {
     //     <motion.div variants={child} className="size-20 bg-orange-500 rounded-sm"></motion.div>
     //   </motion.div>
     // </div>
-    <div>
-      <Lesson5></Lesson5>
+    <div className="w-full flex flex-col justify-center items-center">
+      <div className="h-[200vh] w-full bg-rose-600"></div>
+        <Lesson8></Lesson8>
+      
     </div>
   );
 }
