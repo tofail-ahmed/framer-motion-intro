@@ -9,6 +9,7 @@ import Lesson9 from "./components/Lesson9";
 import Lesson10 from "./components/Lesson10";
 import Lesson11 from "./components/Lesson11";
 import Lesson12 from "./components/Lesson12";
+import Lesson13 from "./components/Lesson13";
 
 
 function App() {
@@ -39,8 +40,8 @@ function App() {
     //   </motion.div>
     // </div>
     <div className="w-full flex flex-col justify-center items-center">
-      <div className="h-[300vh] w-full bg-rose-600"></div>
-        <Lesson12></Lesson12>
+      {/* <div className="h-[300vh] w-full bg-rose-600"></div> */}
+        <Lesson13></Lesson13>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, sint.</p>
     </div>
   );
